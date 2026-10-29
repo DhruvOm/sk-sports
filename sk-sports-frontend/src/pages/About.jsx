@@ -18,7 +18,7 @@ export default function About() {
       <PageHero
         title="About Us"
         subtitle="More than kicks: we build character."
-        image="hero-about.jpg"
+        image="hero-about.webp"
         imageAlt="SK Sports team in Taekwondo uniforms"
       />
 

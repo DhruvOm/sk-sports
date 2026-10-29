@@ -10,7 +10,7 @@ export const instructors = [
     id: 'surendra-kumar',
     name: 'Mr. Surendra Kumar',
     role: 'Head Trainer & Founder',
-    rank: 'Black Belt · Dan rank (EDIT)',
+    rank: 'Black Belt · Dan rank 3',
     image: 'trainer-surendra-kumar.webp',
     experience: '25+ Years Experience',
     // EDIT: only list real, verifiable achievements & certifications
@@ -25,7 +25,7 @@ export const instructors = [
     id: 'shivam-kumar',
     name: 'Mr. Shivam Kumar',
     role: 'Co-Trainer',
-    rank: 'Black Belt · Dan rank (EDIT)',
+    rank: 'Black Belt · Dan rank 1',
     image: 'trainer-shivam-kumar.webp',
     specialty: 'Sparring & Fitness (EDIT)',
     experience: '6+ Years Experience',
@@ -34,7 +34,7 @@ export const instructors = [
 ]
 
 export const about = {
-  established: '20XX', // EDIT
+  established: '2005', // EDIT
   story: [
     'SK Sports Taekwondo Academy was founded in Lucknow by Mr. Surendra Kumar with one simple goal: to make high-quality Taekwondo training available to every child and adult in the city.',
     'What started as a small batch of students has grown into a family of athletes who train for fitness, self-defense, discipline and competition. Together with co-trainer Mr. Shivam Kumar, we focus on strong basics, good character and real confidence.',
