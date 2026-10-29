@@ -11,7 +11,7 @@ export const instructors = [
     name: 'Mr. Surendra Kumar',
     role: 'Head Trainer & Founder',
     rank: 'Black Belt · Dan rank (EDIT)',
-    image: 'trainer-surendra-kumar.jpg',
+    image: 'trainer-surendra-kumar.webp',
     experience: '25+ Years Experience',
     // EDIT: only list real, verifiable achievements & certifications
     achievements: [
@@ -26,7 +26,7 @@ export const instructors = [
     name: 'Mr. Shivam Kumar',
     role: 'Co-Trainer',
     rank: 'Black Belt · Dan rank (EDIT)',
-    image: 'trainer-shivam-kumar.jpg',
+    image: 'trainer-shivam-kumar.webp',
     specialty: 'Sparring & Fitness (EDIT)',
     experience: '6+ Years Experience',
     achievements: ['Certification (EDIT)', 'Achievement (EDIT)'],
