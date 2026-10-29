@@ -1,0 +1,258 @@
+/* ===== Belt selector ===== */
+.belt-select-section {
+  padding: 36px 0 24px;
+}
+
+.belt-selector {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 6px 2px 14px;
+  scrollbar-width: none;
+}
+
+.belt-selector::-webkit-scrollbar {
+  display: none;
+}
+
+.belt-tab {
+  flex: 0 0 140px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 10px 14px;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.belt-tab span {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.belt-tab:hover {
+  transform: translateY(-3px);
+}
+
+.belt-tab.active {
+  border: 2px solid var(--orange);
+  box-shadow: 0 0 24px var(--orange-glow), inset 0 0 16px rgba(255, 107, 26, 0.15);
+}
+
+@media (min-width: 1024px) {
+  .belt-selector {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow: visible;
+  }
+  .belt-tab span {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== Progress line ===== */
+.belt-progress {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.belt-progress-track {
+  position: relative;
+  flex: 1;
+  height: 4px;
+  margin: 0 8px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.belt-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--blue), var(--orange));
+  box-shadow: 0 0 10px var(--orange-glow);
+  transition: width 0.4s;
+}
+
+.belt-dot {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: var(--bg);
+}
+
+.belt-dot.done {
+  background: var(--dot);
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.belt-progress-label {
+  font-weight: 700;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+/* ===== Requirements ===== */
+.requirements-section {
+  padding-top: 48px;
+}
+
+.inline-icon {
+  vertical-align: -2px;
+}
+
+.req-grid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .req-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .req-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .req-card.readiness {
+    grid-column: span 2;
+  }
+}
+
+.req-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: cardIn 0.35s ease both;
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.req-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.req-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.req-card li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.req-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  background: var(--orange);
+  box-shadow: 0 0 6px var(--orange-glow);
+}
+
+.check-list li {
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.check-list li::before {
+  display: none;
+}
+
+.check-list svg {
+  color: #2fdc7a;
+  flex: 0 0 auto;
+}
+
+.readiness-note {
+  margin-top: auto;
+  color: var(--orange-2);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.syllabus-note {
+  margin-top: 18px;
+  color: var(--text-mute);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ===== Grading banner ===== */
+.grading-banner {
+  display: grid;
+  gap: 18px;
+  padding: 26px 22px;
+  border-radius: 18px;
+  border: 1.5px solid var(--orange);
+  background: linear-gradient(110deg, rgba(255, 107, 26, 0.25), rgba(30, 14, 6, 0.9) 50%, rgba(10, 15, 23, 0.95));
+  box-shadow: 0 0 36px rgba(255, 107, 26, 0.25);
+}
+
+.grading-icon {
+  color: var(--orange);
+  filter: drop-shadow(0 0 10px var(--orange-glow));
+}
+
+.grading-text h2 {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.grading-text p {
+  color: var(--text-dim);
+  margin-top: 4px;
+  font-size: 1.05rem;
+}
+
+.grading-actions {
+  display: grid;
+  gap: 10px;
+}
+
+@media (min-width: 900px) {
+  .grading-banner {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 30px 36px;
+  }
+  .grading-actions {
+    grid-auto-flow: column;
+  }
+}

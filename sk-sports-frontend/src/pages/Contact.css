@@ -1,0 +1,226 @@
+/* ===== Quick cards ===== */
+.quick-section {
+  padding: 36px 0 0;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 900px) {
+  .quick-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+}
+
+.quick-card {
+  --c: var(--orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 22px 12px;
+  border-bottom: 2px solid var(--c);
+  transition: transform 0.25s, box-shadow 0.25s;
+  min-width: 0;
+}
+
+.quick-card.green {
+  --c: var(--green);
+}
+
+.quick-card.blue {
+  --c: var(--blue);
+}
+
+.quick-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--c) 30%, transparent);
+}
+
+.quick-card svg {
+  color: var(--c);
+  filter: drop-shadow(0 0 10px color-mix(in srgb, var(--c) 60%, transparent));
+}
+
+.quick-card h2 {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.quick-card span {
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+}
+
+/* ===== Form + map ===== */
+.contact-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-form-panel {
+  padding: 24px 18px;
+}
+
+.contact-form-panel .section-sub {
+  margin-bottom: 22px;
+}
+
+@media (min-width: 640px) {
+  .contact-form-panel {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1.15fr 1fr;
+  }
+}
+
+/* ===== Hours ===== */
+.hours-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hours-head .section-title {
+  margin: 0;
+}
+
+.open-badge {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.open-badge.open {
+  background: linear-gradient(135deg, var(--orange-2), var(--orange));
+  box-shadow: 0 0 18px var(--orange-glow);
+}
+
+.open-badge.closed {
+  border: 1px solid var(--border-strong);
+  color: var(--text-dim);
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 14px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(140, 190, 255, 0.1);
+}
+
+.hours-table th:last-child,
+.hours-table td:last-child {
+  text-align: right;
+}
+
+.hours-table th {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+}
+
+.hours-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ===== Trial strip ===== */
+.trial-strip {
+  padding: 22px 0;
+  border-top: 2px solid var(--orange);
+  border-bottom: 2px solid var(--blue);
+  background:
+    repeating-linear-gradient(120deg, transparent 0 30px, rgba(255, 107, 26, 0.08) 30px 44px),
+    linear-gradient(90deg, rgba(31, 162, 255, 0.12), rgba(10, 15, 23, 0.9) 30%, rgba(10, 15, 23, 0.9) 70%, rgba(255, 107, 26, 0.12));
+  text-align: center;
+}
+
+.trial-strip a {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 4vw, 2.3rem);
+  text-transform: uppercase;
+}
+
+/* ===== Socials ===== */
+.socials-section {
+  padding-top: 0;
+}
+
+.social-grid {
+  display: grid;
+  gap: 14px;
+}
+
+@media (min-width: 768px) {
+  .social-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.social-card {
+  --c: #e1306c;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  border-color: color-mix(in srgb, var(--c) 55%, transparent);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--c) 18%, transparent);
+  transition: transform 0.25s;
+}
+
+.social-card:hover {
+  transform: translateY(-4px);
+}
+
+.social-card.yt {
+  --c: #ff2a2a;
+}
+
+.social-card.fb {
+  --c: #1877f2;
+}
+
+.social-card svg {
+  color: var(--c);
+  flex: 0 0 auto;
+}
+
+.social-card div {
+  min-width: 0;
+}
+
+.social-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.social-card span {
+  color: var(--text-dim);
+  overflow-wrap: anywhere;
+}

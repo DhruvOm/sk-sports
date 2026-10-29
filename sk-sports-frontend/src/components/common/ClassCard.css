@@ -1,0 +1,126 @@
+/* ----- Full card (Classes page) ----- */
+.class-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.class-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 24px rgba(31, 162, 255, 0.15);
+}
+
+.class-card-media {
+  height: 200px;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+}
+
+.class-card-body {
+  padding: 4px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.class-card-body h3 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.class-card-body h3 span {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--text-dim);
+}
+
+.class-card-body p {
+  color: var(--text-dim);
+}
+
+.belt-strip {
+  height: 10px;
+  border-radius: 3px;
+  background: var(--belt);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--belt) 50%, transparent);
+}
+
+.class-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.class-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.class-actions .btn {
+  flex: 1;
+}
+
+@media (min-width: 640px) {
+  .class-card {
+    flex-direction: row;
+  }
+  .class-card-media {
+    flex: 0 0 42%;
+    height: auto;
+    min-height: 280px;
+    clip-path: polygon(0 0, 100% 0, 78% 100%, 0 100%);
+  }
+  .class-card-body {
+    padding: 22px 22px 22px 6px;
+  }
+}
+
+/* ----- Compact card (Home page) ----- */
+.class-card-compact {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.class-card-compact:hover {
+  transform: translateY(-4px);
+  border-color: var(--belt);
+}
+
+.class-card-compact h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.class-card-compact h4 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.class-card-compact h4 span {
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.class-card-compact p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.card-link {
+  margin-top: auto;
+  color: var(--orange-2);
+  font-weight: 700;
+}
+
+.card-link:hover {
+  color: #fff;
+}
