@@ -73,31 +73,31 @@ export const stats = [
 export const galleryCategories = ['All', 'Training', 'Belt Grading', 'Tournaments', 'Events']
 
 export const galleryFeatured = [
-  { image: 'gallery-featured-1.jpg', title: 'District Championship', date: 'OCT 2026' },
-  { image: 'gallery-featured-2.jpg', title: 'Belt Grading Ceremony', date: 'SEP 2026' },
-  { image: 'gallery-featured-3.jpg', title: 'Summer Training Camp', date: 'JUN 2026' },
+  { image: 'gallery-featured-1.webp', title: 'District Championship', date: 'OCT 2026' },
+  { image: 'gallery-featured-2.webp', title: 'Belt Grading Ceremony', date: 'SEP 2026' },
+  { image: 'gallery-featured-3.webp', title: 'Summer Training Camp', date: 'JUN 2026' },
 ]
 
 export const galleryItems = [
-  { image: 'gallery-1.jpg', title: 'High-kick practice', category: 'Training', shape: 'tall' },
-  { image: 'gallery-2.jpg', title: 'Sparring drill', category: 'Training', shape: 'square' },
-  { image: 'gallery-3.jpg', title: 'Yellow belt promotion', category: 'Belt Grading', shape: 'wide' },
-  { image: 'gallery-4.jpg', title: 'Medal podium', category: 'Tournaments', shape: 'square' },
-  { image: 'gallery-5.jpg', title: 'Kids batch', category: 'Training', shape: 'tall' },
-  { image: 'gallery-6.jpg', title: 'Team photo', category: 'Events', shape: 'wide' },
-  { image: 'gallery-7.jpg', title: 'Poomsae performance', category: 'Tournaments', shape: 'square' },
-  { image: 'gallery-8.jpg', title: 'Board breaking', category: 'Belt Grading', shape: 'tall' },
-  { image: 'gallery-9.jpg', title: 'Annual function demo', category: 'Events', shape: 'square' },
-  { image: 'gallery-10.jpg', title: 'Flexibility training', category: 'Training', shape: 'square' },
-  { image: 'gallery-11.jpg', title: 'Black belt ceremony', category: 'Belt Grading', shape: 'wide' },
-  { image: 'gallery-12.jpg', title: 'State championship', category: 'Tournaments', shape: 'tall' },
+  { image: 'gallery-1.webp', title: 'High-kick practice', category: 'Training', shape: 'tall' },
+  { image: 'gallery-2.webp', title: 'Sparring drill', category: 'Training', shape: 'square' },
+  { image: 'gallery-3.webp', title: 'Yellow belt promotion', category: 'Belt Grading', shape: 'wide' },
+  { image: 'gallery-4.webp', title: 'Medal podium', category: 'Tournaments', shape: 'square' },
+  { image: 'gallery-5.webp', title: 'Kids batch', category: 'Training', shape: 'tall' },
+  { image: 'gallery-6.webp', title: 'Team photo', category: 'Events', shape: 'wide' },
+  { image: 'gallery-7.webp', title: 'Poomsae performance', category: 'Tournaments', shape: 'square' },
+  { image: 'gallery-8.webp', title: 'Board breaking', category: 'Belt Grading', shape: 'tall' },
+  { image: 'gallery-9.webp', title: 'Annual function demo', category: 'Events', shape: 'square' },
+  { image: 'gallery-10.webp', title: 'Flexibility training', category: 'Training', shape: 'square' },
+  { image: 'gallery-11.webp', title: 'Black belt ceremony', category: 'Belt Grading', shape: 'wide' },
+  { image: 'gallery-12.webp', title: 'State championship', category: 'Tournaments', shape: 'tall' },
 ]
 
 // EDIT: add YouTube video links (or leave empty)
 export const videos = [
-  { image: 'video-1.jpg', title: 'Demo Performance', url: '' },
-  { image: 'video-2.jpg', title: 'Tournament Highlights', url: '' },
-  { image: 'video-3.jpg', title: 'Kids Class Fun', url: '' },
+  { image: 'video-1.webp', title: 'Demo Performance', url: '' },
+  { image: 'video-2.webp', title: 'Tournament Highlights', url: '' },
+  { image: 'video-3.webp', title: 'Kids Class Fun', url: '' },
 ]
 
 // ---------- Testimonials ----------
