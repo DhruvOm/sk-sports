@@ -63,10 +63,10 @@ export const tenets = [
 
 // EDIT: real numbers
 export const stats = [
-  { value: 'XXX+', label: 'Students Trained', color: 'orange' },
-  { value: 'XX+', label: 'Medals Won', color: 'blue' },
-  { value: 'XX+', label: 'Black Belts', color: 'orange' },
-  { value: 'XX+', label: 'Years Experience', color: 'blue' },
+  { value: '300+', label: 'Students Trained', color: 'orange' },
+  { value: '90+', label: 'Medals Won', color: 'blue' },
+  { value: '30+', label: 'Black Belts', color: 'orange' },
+  { value: '25+', label: 'Years Experience', color: 'blue' },
 ]
 
 // ---------- Gallery ----------

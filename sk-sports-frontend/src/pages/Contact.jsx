@@ -50,7 +50,7 @@ export default function Contact() {
       <PageHero
         title="Get In Touch"
         subtitle="Questions? Ready to start? We're here to help."
-        image="hero-contact.jpg"
+        image="hero-contact.webp"
         imageAlt="Students lined up in the dojang"
       />
 

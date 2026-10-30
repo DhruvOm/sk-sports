@@ -24,7 +24,7 @@ export default function BeltProgress() {
       <PageHero
         title="The Belt Journey"
         subtitle="The path to Black Belt is a journey of continuous improvement. Track your progression and master each tier."
-        image="hero-belt-progress.jpg"
+        image="hero-belt-progress.webp"
         imageAlt="Taekwondo athlete kicking a pad"
       />
 

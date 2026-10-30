@@ -40,7 +40,7 @@ export const site = {
 
   // EDIT: next grading date shown on Schedule + Belt Progress pages
   nextGrading: '12 November 2026',
-  notice: 'Academy closed on 2 November for Diwali celebrations',
+  notice: 'Academy closed on 8 November for Diwali celebrations',
 }
 
 export const navLinks = [
