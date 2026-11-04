@@ -36,14 +36,12 @@ export default function Home() {
 
         <div className="container home-hero-inner">
           <div className="home-hero-text">
-            <span className="hero-eyebrow">Taekwondo Academy · {site.city}</span>
-            <h1>
-              Discipline.
-              <br />
-              Power.
-              <br />
-              <span className="text-orange">Confidence.</span>
-            </h1>
+            <span className="hero-eyebrow hero-line" style={{ '--i': 0 }}>Taekwondo Academy · {site.city}</span>
+           <h1>
+           <span className="hero-line" style={{ '--i': 0 }}>Discipline.</span>
+           <span className="hero-line" style={{ '--i': 1 }}>Power.</span>
+           <span className="hero-line text-orange" style={{ '--i': 2 }}>Confidence.</span>
+           </h1>
             <p>Taekwondo classes for kids, teens &amp; adults.</p>
             <div className="hero-actions">
               <Link to="/book-trial" className="btn btn-primary">
