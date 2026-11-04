@@ -15,6 +15,7 @@ import { slotsForDay, formatTime, days } from '../data/schedule'
 import { instructors, galleryItems, testimonials } from '../data/content'
 import { whatsappLink, site } from '../data/siteConfig'
 import './Home.css'
+import Girljump from '../components/common/Girljump'
 
 // One featured class per category for the home page
 const featured = ['little-dragons', 'teens', 'adults', 'competition'].map((id) => classes.find((c) => c.id === id))
@@ -257,6 +258,7 @@ export default function Home() {
       <section className="section grid-bg" id="enquiry">
         <div className="container enquiry-grid">
           <div className="glass enquiry-panel glass-glow-orange">
+            <Girljump className="enquiry-kid" />
             <h2 className="section-title">
               Your First Class Is <span className="text-orange">Free</span>
             </h2>
